@@ -6,7 +6,7 @@ import AddBook from "../pages/addBook/AddBook";
 import BookDetails from "../pages/bookDetails/BookDetails";
 import { AuthContext } from "../context/AuthContext";
 import Signup from "../pages/signup/Signup";
-import UpdateBook from "../pages/updateBook/updateBook";
+import UpdateBook from "../pages/updateBook/UpdateBook";
 
 const ProtectedRoute = ({ element }) => {
   const { user } = useContext(AuthContext);
