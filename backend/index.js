@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: "https://dc-lms.vercel.app/",
+  origin: "https://dc-lms.vercel.app",
   optionsSuccessStatus: 200,
 };
 
