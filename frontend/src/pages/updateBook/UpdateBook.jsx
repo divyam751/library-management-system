@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router";
 import { AuthContext } from "../../context/AuthContext";
 import { useToast } from "../../context/ToastContext";
 import "./UpdateBook.css";
+import { api } from "../../constants";
 
 const UpdateBook = () => {
   const { id } = useParams();
@@ -29,9 +30,7 @@ const UpdateBook = () => {
 
     const fetchBook = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:3000/api/v1/books/${id}`
-        );
+        const response = await fetch(`${api}books/${id}`);
         if (!response.ok) throw new Error("Failed to fetch book details");
 
         const data = await response.json();
