@@ -130,10 +130,13 @@ const UpdateBook = () => {
         >
           <option value="">Select Genre</option>
           <option value="Motivation">Motivation</option>
+          <option value="Finance">Finance</option>
+          <option value="Motivation">Personal Development</option>
           <option value="Self-Help">Self-Help</option>
           <option value="Productivity">Productivity</option>
           <option value="Spirituality">Spirituality</option>
           <option value="Biography">Biography</option>
+          <option value="Chess">Chess</option>
         </select>
 
         <input
